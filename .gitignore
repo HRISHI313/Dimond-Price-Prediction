@@ -1,2 +1,5 @@
 # Enviormint
 venv/
+build/
+Dimond_Price_Prediction.egg-info/
+dist/
