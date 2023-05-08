@@ -3,10 +3,11 @@ import os
 from datetime import datetime
 
 LOG_FILE = f"{datetime.now().strftime('%m,%d,%Y,%H,%M,%S')}.log"
-LOG_PATH = os.path.join(os.getcwd(),'Logs',LOG_FILE)
-os.makedirs(LOG_PATH,exist_ok=True)
+LOG_PATH = os.path.join(os.getcwd(), 'Logs')
 
-LOG_FILE_PATH = os.path,join(LOG_PATH,LOG_FILE)
+os.makedirs(LOG_PATH, exist_ok=True)
+
+LOG_FILE_PATH = os.path.join(LOG_PATH, LOG_FILE)
 
 logging.basicConfig(
     filename=LOG_FILE_PATH,
