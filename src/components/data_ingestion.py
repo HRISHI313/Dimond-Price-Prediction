@@ -23,7 +23,7 @@ class Dataingestion:
     def Initaite_Data_ingestion(self):
         logging.info('Data ingestion process started')
         try:
-            df = pd.read_csv('Notebook/data/diamonds.csv')
+            df = pd.read_csv('Notebook/data/gemstone.csv')
             logging.info('Dataset has been read as a DataFrame')
 
             if not os.path.exists('artifacts'):
